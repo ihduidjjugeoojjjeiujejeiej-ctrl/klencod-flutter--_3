@@ -1,0 +1,53 @@
+name: library_manager
+description: إدارة مكتبتي - نظام إدارة مكتبة ومخزن ومبيعات
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # قاعدة البيانات
+  drift: ^2.20.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # إدارة الحالة
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # الأمان (بدائل صحيحة)
+  crypto: ^3.0.5           # بدل password_guard
+  bcrypt: ^1.1.3           # للتجزئة
+  flutter_secure_storage: ^9.2.2
+
+  # PDF
+  pdf: ^3.11.1             # بدل flutter_pdf_invoice_widgets
+  printing: ^5.13.2
+
+  # Excel
+  syncfusion_flutter_xlsio: ^26.2.7
+
+  # أدوات
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  drift_dev: ^2.20.0
+  build_runner: ^2.4.11
+  riverpod_generator: ^2.4.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/Cairo-Regular.ttf
+    - assets/fonts/Cairo-Bold.ttf
